@@ -71,7 +71,7 @@ def augment_video(video_path, output_folder, transformations):
             writer.write(transformed_frame)
 
         writer.release()
-        print(f"✅ Saved: {output_video_path}")
+        print(f" Saved: {output_video_path}")
 
     cap.release()
 
@@ -83,7 +83,7 @@ for category in categories:
     input_folder = os.path.join(dataset_root, category)
 
     # Debugging: Print folder path
-    print(f"🔍 Checking folder: {input_folder}")
+    print(f" Checking folder: {input_folder}")
 
     # Check if input folder exists
     if not os.path.exists(input_folder):
